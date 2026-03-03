@@ -44,6 +44,43 @@ h1{font-size:44px;margin:12px 0 32px;color:#3f4a4e;font-weight:800}
 
 .site-footer{padding:28px 0;text-align:center;color:#555}
 
+/* Subpage / learn.html styles */
+.sub-hero{background:linear-gradient(180deg,#aee6f6 0%, #cfeef6 100%);padding:48px 0}
+.sub-hero-grid{display:grid;grid-template-columns:1fr 280px;align-items:center;gap:24px}
+.sub-hero-title{font-family:'Playfair Display', serif;font-size:48px;margin:0 0 12px;color:#0b3a5b}
+.sub-hero-lead{font-size:20px;color:#e53935;margin:0 0 20px;font-weight:700}
+.sub-hero-content{max-width:640px}
+.sub-hero-art{justify-self:end}
+
+.sub-hero-art img, .sub-hero-phone{display:block;max-width:260px;width:100%;height:auto}
+
+.section{padding:56px 0}
+.section--dark{background:#143a56;color:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 420px;align-items:center;gap:24px}
+.about-copy{max-width:680px}
+.about-copy h2{font-size:28px;margin-top:6px}
+.about-copy p{color:rgba(255,255,255,0.92);line-height:1.7}
+.about-art{position:relative}
+.about-bag{width:100%;max-width:360px;display:block;margin:0 auto}
+.brand-logo.small{width:160px;margin-bottom:12px}
+
+.section--light{background:#f6f0e9;color:#222;text-align:center}
+.impact-title{font-size:28px;margin-bottom:10px}
+.impact-copy{max-width:820px;margin:0 auto 18px;color:#333}
+
+@media (max-width:980px){
+	.sub-hero-grid{grid-template-columns:1fr 220px}
+	.about-grid{grid-template-columns:1fr 320px}
+}
+@media (max-width:720px){
+	.sub-hero-grid{grid-template-columns:1fr;gap:18px;text-align:center}
+	.sub-hero-art{order:2}
+	.sub-hero-content{order:1}
+	.sub-hero-art img, .sub-hero-phone{max-width:180px}
+	.about-grid{grid-template-columns:1fr;gap:24px}
+	.brand-logo.small{width:120px}
+}
+
 /* Responsive */
 @media (max-width:980px){
 	.hero-grid{grid-template-columns:1fr 320px}
